@@ -1,0 +1,162 @@
+<!-- Landing Page HTML Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="animated fadeInDown">Welcome to Our Landing Page</h1>
+            <p class="animated fadeInUp">Transform visitors into leads and sales while bolstering brand trust and nurturing customer loyalty.</p>
+            <button class="animated bounceIn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="animated fadeInLeft">What We Offer</h2>
+            <ul class="animated fadeInRight">
+                <li>Conversion-focused landing page layouts</li>
+                <li>Instablocks and Global Blocks for easy scaling</li>
+                <li>AMP support for superior mobile browsing experience</li>
+                <li>A/B testing capabilities for data-driven decisions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="animated fadeInUp">What Our Customers Say</h2>
+            <div class="testimonial animated slideInLeft">
+                <p>"Instapage has helped us increase our conversions by 30%!"</p>
+                <span>- John Doe, CEO of XYZ Corporation</span>
+            </div>
+            <div class="testimonial animated slideInRight">
+                <p>"With Instapage, we've seen a significant boost in our sales."</p>
+                <span>- Jane Smith, Marketing Manager of ABC Inc.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="animated fadeInDown">Get Started Today</h2>
+            <button class="animated bounceIn">Sign Up Now</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Landing Page. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CSS Animations -->
+    <style>
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .fadeInDown {
+            animation-name: fadeInDown;
+        }
+
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+
+        .bounceIn {
+            animation-name: bounceIn;
+        }
+
+        .slideInLeft {
+            animation-name: slideInLeft;
+        }
+
+        .slideInRight {
+            animation-name: slideInRight;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+    <!-- JavaScript for Animations -->
+    <script>
+        // Add event listeners for animations
+        document.addEventListener("DOMContentLoaded", function() {
+            var elements = document.querySelectorAll(".animated");
+            elements.forEach(function(element) {
+                element.addEventListener("scroll", function() {
+                    element.classList.add("animated");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
